@@ -27,7 +27,7 @@
                                         <th scope="row">{{ $i }}</th>
                                         <td>{{ $data->restaurants->restaurant_name }}</td>
                                         <td>{{ $data->review }}</td>
-                                        <td><img src="{{url('/images/' . $data->img)}}" width="200px;" height="200px;"></td>
+                                        <td><img src="{{url('/images/' . $data->img)}}" width="350px;" height="200px;" ></td>
                                         <form action="{{ route('review.update',$data->id) }}" method="POST">
                                                 
                                                  @csrf

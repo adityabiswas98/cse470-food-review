@@ -36,8 +36,8 @@
                                     <tr>
                                         <td>{{ $data->restaurants->restaurant_name }}</td>
                                         <td style="width:350px;">{{ $data->review }}</td>
-                                        <td><img src="{{url('/images/' . $data->img)}}" width="200px;" height="200px;"></td>
-                                        <td>{{$data->comment}}</td>
+                                        <td><img src="{{url('/images/' . $data->img)}}" width="350px;" height="200px;"></td>
+                                        <td style="width:320px;">{{$data->comment}}</td>
                                     </tr>
                                     <?php $i++; ?>
                                     @endforeach
