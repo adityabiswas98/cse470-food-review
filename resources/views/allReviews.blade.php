@@ -34,7 +34,7 @@
                                     <?php $i=1; ?>
                                     @foreach($allReviews as $data)
                                     <tr>
-                                        <td>{{ $data->restaurants->restaurant_name }}</td>
+                                        <td>@if($data->restaurants){{ $data->restaurants->restaurant_name }}@endif</td>
                                         <td style="width:350px;">{{ $data->review }}</td>
                                         <td><img src="{{url('/images/' . $data->img)}}" width="350px;" height="200px;"></td>
                                         <td style="width:320px;">{{$data->comment}}</td>

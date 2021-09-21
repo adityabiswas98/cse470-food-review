@@ -24,7 +24,7 @@ class ReviewTest extends TestCase
         $file = UploadedFile::fake()->image('avatar.png');
         
         $data = [
-            'restaurant_id' => '2', 
+            'restaurant_id' => '34', 
             'review' => 'test review',
             'img' => $file
         ];
