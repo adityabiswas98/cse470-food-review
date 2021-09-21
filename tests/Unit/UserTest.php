@@ -57,7 +57,8 @@ class UserTest extends TestCase
         $response = $this->call('POST', '/register', $data, [], [], ['HTTP_REFERER' => '/register']);
         $response->assertRedirect('/register');
     }
-    
+ 
+
     public function testOwnerRegister(){
         $data = [
             'first_name' => 'test', 
